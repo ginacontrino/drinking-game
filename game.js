@@ -1,4 +1,4 @@
-playGame();
+console.log( playGame() );
 
 
 // ======================================
@@ -13,7 +13,7 @@ playGame();
  */
 function playGame()
 {
-  console.log( compareGuessNumberToSecretNumber(getTheFirstArgument(), getSecretNumber()));
+  return compareGuessNumberToSecretNumber(getTheFirstArgument(), getSecretNumber());
 }
 
 
