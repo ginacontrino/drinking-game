@@ -1,6 +1,7 @@
 ### This is my game! :D
 
-After cloning the repo, simply run the following command in the terminal to play:
+After cloning the repo and running 'npm install',
+simply run the following command in the terminal to play:
 
     node Game.js
 
