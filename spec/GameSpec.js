@@ -32,7 +32,7 @@ var chalk    = require('chalk');
     // act
     var game = new Game(7,secret);
 
-    var expectedResult = "Oh no! Number 6. Have a drink!";
+    var expectedResult = "Oh no! Number 6. Have a drink! Whoooooo!\n";
     var test = game.play(guess).message;
 
     // assert
@@ -130,11 +130,11 @@ var chalk    = require('chalk');
     var originalMessages = {
       "invalid_number":      "Penalty! Finish your drink! Your guess must be a positive whole number.",
       "outside_max_range":   "Penalty! Finish your drink! Your number must be between 1 and %s.",
-      "below_lower_bound":   "I already told you the secret number was higher! penalty drink!",
-      "above_upper_bound":   "I already told you the secret number was lower! penalty drink!",
+      "below_lower_bound":   "...But I already told you the secret number was higher!... penalty drink!",
+      "above_upper_bound":   "Drunk?... I already told you the secret number was lower! penalty drink! :P",
       "bigger_than_secret":  "No drink for you. Lower!",
       "smaller_than_secret": "No drink for you. Higher!",
-      "correct_number":      "Oh no! Number %s. Have a drink!"
+      "correct_number":      "Oh no! Number %s. Have a drink! Whoooooo!\n"
     };
 
     // assert
@@ -143,11 +143,11 @@ var chalk    = require('chalk');
     var customisedMessages = {
       "invalid_number":      "Penalty!",
       "outside_max_range":   "Penalty! Finish your drink! Your number must be between 1 and %s.",
-      "below_lower_bound":   "I already told you the secret number was higher! penalty drink!",
-      "above_upper_bound":   "I already told you the secret number was lower! penalty drink!",
+      "below_lower_bound":   "...But I already told you the secret number was higher!... penalty drink!",
+      "above_upper_bound":   "Drunk?... I already told you the secret number was lower! penalty drink! :P",
       "bigger_than_secret":  "No drink for you. Lower!",
       "smaller_than_secret": "No drink for you. Higher!",
-      "correct_number":      "Oh no! Number %s. Have a drink!"
+      "correct_number":      "Oh no! Number %s. Have a drink! Whoooooo!\n"
     };
 
     // act
